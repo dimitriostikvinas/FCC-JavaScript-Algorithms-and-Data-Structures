@@ -1,0 +1,100 @@
+:root {
+    /* CSS custom properties (variables) defined for color themes used throughout the site. */
+    --light-grey: #f5f6f7;
+    --dark-blue: #0a0a23;
+    --fcc-blue: #1b1b32;
+    --light-yellow: #fecc4c;
+    --dark-yellow: #feac32;
+    --light-pink: #ffadad;
+    --dark-red: #850000;
+    --light-green: #acd157;
+  }
+  
+  body {
+    /* Set default font styles and background for the body of the webpage. */
+    font-family: "Lato", Helvetica, Arial, sans-serif; /* Specifies a font stack. */
+    font-size: 18px; /* Sets the base font size. */
+    background-color: var(--fcc-blue); /* Uses a CSS variable for background color. */
+    color: var(--light-grey); /* Sets the default text color using a variable. */
+  }
+  
+  h1 {
+    /* Styling for main heading. */
+    text-align: center; /* Centers the heading text horizontally. */
+  }
+  
+  .container {
+    /* Container class for layout management. */
+    width: 90%; /* Sets width to 90% of its parent element. */
+    max-width: 680px; /* Limits maximum width to prevent overly wide layouts. */
+  }
+  
+  h1,
+  .container,
+  .output {
+    /* Common margin styling for the heading, main container, and output display. */
+    margin: 20px auto; /* Centers elements horizontally and adds vertical spacing. */
+  }
+  
+  label,
+  legend {
+    /* Bold styling for form labels and fieldset legends to emphasize text. */
+    font-weight: bold;
+  }
+  
+  .input-container {
+    /* Flex container for input fields, making it easier to manage layout. */
+    display: flex;
+    flex-direction: column; /* Stacks children vertically. */
+  }
+  
+  button {
+    /* Styling for all buttons. */
+    cursor: pointer; /* Changes the mouse cursor to a pointer to indicate clickability. */
+    text-decoration: none; /* Removes underline from buttons, if any. */
+    background-color: var(--light-yellow); /* Background color for buttons. */
+    border: 2px solid var(--dark-yellow); /* Border style and color for buttons. */
+  }
+  
+  button,
+  input,
+  select {
+    /* Common styling for buttons, input fields, and select dropdowns to ensure consistent dimensions and color. */
+    min-height: 24px; /* Ensures that elements are not too short, improving clickability and readability. */
+    color: var(--dark-blue); /* Text color for interactive elements, providing contrast. */
+  }
+  
+  fieldset,
+  label,
+  button,
+  input,
+  select {
+    /* Margin styling for various form elements to create visual spacing. */
+    margin-bottom: 10px;
+  }
+  
+  .output {
+    /* Styling for the output container where results or messages are displayed. */
+    border: 2px solid var(--light-grey); /* Border color to distinguish the output area. */
+    padding: 10px; /* Padding inside the output container for spacing. */
+    text-align: center; /* Centers the text inside the output container. */
+  }
+  
+  .hide {
+    /* Utility class to hide elements, used programmatically via JavaScript. */
+    display: none;
+  }
+  
+  .output span {
+    /* Styling for spans inside the output container to emphasize content. */
+    font-weight: bold; /* Makes text bold. */
+    font-size: 1.2em; /* Sets font size to 120% of the inherited size for emphasis. */
+  }
+  
+  .surplus,
+  .deficit {
+    /* Color coding for surplus and deficit values. */
+    color: var(--light-pink); /* Sets text color for surplus values. */
+    color: var(--light-green); /* Sets text color for deficit values. */
+  }
+  

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./styles.css" />
+  <meta charset = "UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.freecodecamp.org/universal/favicons/favicon.ico"
+    />
+  <title>Cash Register</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Cash Register</h1>
+  </header>
+
+  <main>
+    <img
+        class="freecodecamp-logo"
+        src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+        alt="freeCodeCamp Logo"
+    />
+    <div id="change-due"></div>
+    <div class="input-div">
+      <label for="cash"></cash>
+      <input id="cash" type="number"/>
+      <button id="purchase-btn">Purchase</button>
+    </div>
+
+    <div class="container">
+        <div class="top-display-screen-container">
+          <p id="price-screen" class="price-screen"></p>
+          <div class="connector"></div>
+        </div>
+        <div class="top-register">
+          <div class="btns-container">
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+          </div>
+          <div id="cash-drawer-display" class="cash-drawer-display"></div>
+        </div>
+        <div class="bottom-register">
+          <div class="circle"></div>
+        </div>
+      </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

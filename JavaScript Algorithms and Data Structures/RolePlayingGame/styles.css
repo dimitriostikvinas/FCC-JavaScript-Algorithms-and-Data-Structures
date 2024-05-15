@@ -1,0 +1,53 @@
+/* Sets the background color for the entire body of the page. */
+body {
+    background-color: #0a0a23;
+  }
+  
+  /* Styles for the text container in the game, sets the background color and text color for contrast. */
+  #text {
+    background-color: #0a0a23; /* Matches the body background for a consistent look. */
+    color: #ffffff; /* White text color for readability against the dark background. */
+    padding: 10px; /* Adds space around the text inside the container. */
+  }
+  
+  /* Container for the game elements to limit its size and centralize it. */
+  #game {
+    max-width: 500px; /* Maximum width of the game container. */
+    max-height: 400px; /* Maximum height of the game container. */
+    background-color: #ffffff; /* White background color for the game content. */
+    color: #ffffff; /* Sets text color, which is overridden by specific elements inside. */
+    margin: 30px auto 0px; /* Centrally aligns the game container with a top margin. */
+    padding: 10px; /* Padding inside the game container for spacing around content. */
+  }
+  
+  /* General styles for the controls and stats sections with borders and padding. */
+  #controls,
+  #stats {
+    border: 1px solid #0a0a23; /* Adds a dark border for definition. */
+    padding: 5px; /* Adds space inside the borders around the content. */
+    color: #0a0a23; /* Dark text color for contrast against lighter backgrounds. */
+  }
+  
+  /* Styles for the monster stats section, initially hidden. */
+  #monsterStats {
+    display: none; /* Hidden by default, shown during monster encounters. */
+    border: 1px solid #0a0a23; /* Dark border for consistency with other sections. */
+    padding: 5px; /* Padding inside the section. */
+    color: #ffffff; /* White text for readability against the red background. */
+    background-color: #c70d0d; /* Red background to indicate danger or combat. */
+  }
+  
+  /* Padding for elements with the class 'stat' to separate them visually. */
+  .stat {
+    padding-right: 10px; /* Right padding to create space between stats. */
+  }
+  
+  /* Styles for all buttons in the game to enhance interactivity and aesthetics. */
+  button {
+    cursor: pointer; /* Changes the cursor to indicate clickable items. */
+    color: #0a0a23; /* Dark text color for readability. */
+    background-color: #feac32; /* Base button color. */
+    background-image: linear-gradient(#fecc4c, #ffac33); /* Gradient effect for visual appeal. */
+    border: 3px solid #feac32; /* Solid border that matches the button color. */
+  }
+  

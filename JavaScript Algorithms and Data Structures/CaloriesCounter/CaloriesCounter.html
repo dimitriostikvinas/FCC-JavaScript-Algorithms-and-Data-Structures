@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- Specifies the document type and version, HTML5 here. -->
+<html lang="en">
+<!-- Opening tag for the HTML document specifying English language. -->
+  <head>
+    <!-- Contains meta information, links to stylesheets, and other resources. -->
+    <meta charset="utf-8" />
+    <!-- Defines the character encoding for the webpage. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensures the page is optimized for mobile devices by setting the viewport width and initial scale. -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Links the external CSS stylesheet for styling the webpage. -->
+    <title>Calorie Counter</title>
+    <!-- Sets the title of the webpage as seen in the browser tab. -->
+  </head>
+  <body>
+    <!-- Contains all the content visible to the user. -->
+    <main>
+      <!-- Semantically marks the main content of the document. -->
+      <h1>Calorie Counter</h1>
+      <!-- Main heading of the webpage, describes the page content. -->
+      <div class="container">
+        <!-- Container for styling and structuring the form area. -->
+        <form id="calorie-counter">
+          <!-- Form element to allow user input that can be submitted to a server. -->
+          <label for="budget">Budget</label>
+          <!-- Label for the calorie budget input, improves accessibility. -->
+          <input
+            type="number"
+            min="0"
+            id="budget"
+            placeholder="Daily calorie budget"
+            required
+            />
+          <!-- Input for entering the daily calorie budget, with minimum value set to 0 and marked as required. -->
+          <fieldset id="breakfast">
+            <!-- Groups related elements in the form; in this case, for breakfast. -->
+            <legend>Breakfast</legend>
+            <!-- Caption for the fieldset, denotes the meal time. -->
+            <div class="input-container"></div>
+            <!-- Placeholder where dynamic inputs will be added via JavaScript. -->
+          </fieldset>
+          <!-- Similar structure repeated for lunch, dinner, snacks, and exercise with respective IDs and legends. -->
+          <fieldset id="lunch">
+            <legend>Lunch</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="dinner">
+            <legend>Dinner</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="snacks">
+            <legend>Snacks</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <fieldset id="exercise">
+            <legend>Exercise</legend>
+            <div class="input-container"></div>
+          </fieldset>
+          <div class="controls">
+            <!-- Container for form controls, specifically adding new entries. -->
+            <span>
+              <label for="entry-dropdown">Add food or exercise:</label>
+              <!-- Label for the dropdown to select category of new entry. -->
+              <select id="entry-dropdown" name="options">
+                <!-- Dropdown to choose the category for adding new entries. -->
+                <option value="breakfast" selected>Breakfast</option>
+                <!-- Options within the dropdown, with 'Breakfast' selected by default. -->
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="snacks">Snacks</option>
+                <option value="exercise">Exercise</option>
+              </select>
+              <button type="button" id="add-entry">Add Entry</button>
+              <!-- Button to trigger adding new entry fields. -->
+            </span>
+          </div>
+          <div>
+            <!-- Container for submit and clear buttons. -->
+            <button type="submit">
+              Calculate Remaining Calories
+            </button>
+            <!-- Button to submit the form data and calculate remaining calories. -->
+            <button type="button" id="clear">Clear</button>
+            <!-- Button to clear all inputs in the form. -->
+          </div>
+        </form>
+        <div id="output" class="output hide"></div>
+        <!-- Container for displaying the result of the calorie calculation, initially hidden. -->
+      </div>
+    </main>
+    <script src="./script.js"></script>
+    <!-- Link to external JavaScript file for functionality. -->
+  </body>
+</html>
